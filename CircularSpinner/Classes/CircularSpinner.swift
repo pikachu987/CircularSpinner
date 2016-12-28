@@ -294,7 +294,8 @@ open class CircularSpinner: UIView {
     }
     
     open class func setBackgroundColor(_ color: UIColor){
-        self.setBackgroundColor(color)
+        let spinner = CircularSpinner.sharedInstance
+        spinner.mainView.backgroundColor = color
     }
     
     fileprivate func updateTitleLabel() {
