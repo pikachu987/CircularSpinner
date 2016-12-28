@@ -288,6 +288,15 @@ open class CircularSpinner: UIView {
         }
     }
     
+    open class func setLabelColor(_ color: UIColor){
+        let spinner = CircularSpinner.sharedInstance
+        spinner.titleLabel.textColor = color
+    }
+    
+    open class func setBackgroundColor(_ color: UIColor){
+        self.setBackgroundColor(color)
+    }
+    
     fileprivate func updateTitleLabel() {
         let spinner = CircularSpinner.sharedInstance
         
